@@ -1,0 +1,123 @@
+:root{
+    --aboveJumbotron: #191D28;
+    --belowJumbotron: #171B24;
+    --firstColor: #D2D6EF;
+    --secondColor: #FFA630;
+    --lightColor: white;
+    --primaryFont: 'Roboto', sans-serif, bold;
+    --secondaryFont: 'Roboto', sans-serif;
+    --jumbotronBackground: url("../img/ponyo038.jpg") center center no-repeat;
+}
+
+#light_text_color{
+    color: var(--lightColor);
+}
+#primary_font{
+    font-family: var(--primaryFont);
+}
+#secondary_font{
+    font-family: var(--secondaryFont);
+}
+#section_color{
+    background-color: var(--belowJumbotron);
+}
+#navbar_color{
+    background-color: var(--aboveJumbotron);
+}
+#card_text_alignment{
+    text-align: left;
+}
+
+/* navbar */
+nav{
+    background-color: var(--aboveJumbotron);
+}
+.navbar{
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+}
+.fa-code{
+    text-align: right;
+}
+.navbar-toggler:focus{
+    outline-color: var(--aboveJumbotron);
+}
+.navbar_card{
+    opacity: 0.5;
+    transition: opacity 1s ease-in-out;
+}
+.navbar_card:hover{
+    opacity: 1;
+}
+
+/* jumbotron */
+.jumbotron{
+    height: 760px;
+    background: var(--jumbotronBackground);
+    background-size: cover;
+    margin-top: 65px;
+}
+.spacer{
+    padding-top: 150px;
+}
+.jumbotron_button{
+    background-color: transparent;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+.jumbotron_button:focus{
+    outline-color: var(--secondColor);
+}
+.jumbotron_button:hover{
+    background-color: var(--secondColor);
+}
+
+/* website cards */
+.website_card{
+    transition: transform 0.5s ease-in-out;
+    z-index: 2;
+    position: relative;
+}
+.website_card:hover{
+    transform: scale(1.2);
+}
+
+/* footer */
+.footer_a{
+    color: var(--lightColor);
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+    text-decoration: none;
+}
+.footer_a:hover{
+    color: var(--secondColor);
+    text-decoration: none;
+}
+.text_right{
+    text-align: right;
+}
+.text_left{
+    text-align: left;
+}
+/* a hover */
+.link_hover_navbar {
+    color: var(--lightColor);
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+    text-decoration: none;
+}
+
+.link_hover_navbar:hover {
+    color: var(--secondColor);
+    text-decoration: none;
+}
