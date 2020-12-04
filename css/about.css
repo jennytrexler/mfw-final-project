@@ -1,0 +1,251 @@
+:root{
+    --aboveJumbotron: #191D28;
+    --belowJumbotron: #171B24;
+    --firstColor: #D2D6EF;
+    --secondColor: #FFA630;
+    --lightColor: white;
+    --darkColor: black;
+    --grayColor: #192024;
+    --primaryFont: 'Roboto', sans-serif, bold;
+    --secondaryFont: 'Roboto', sans-serif;
+    --contactformtextColor: white;
+    --contactformColor: #192024;
+}
+
+#light_text_color{
+    color: var(--lightColor);
+}
+#primary_font{
+    font-family: var(--primaryFont);
+}
+#secondary_font{
+    font-family: var(--secondaryFont);
+}
+#section_color{
+    background-color: var(--belowJumbotron);
+}
+#card_text_alignment{
+    text-align: left;
+}
+#contact_background_color{
+    background-color: var(--lightColor);
+}
+#form_footer_background_color{
+    background-color: var(--grayColor);
+    color: var(--lightColor);
+}
+/* navbar */
+nav{
+    background-color: var(--lightColor);
+}
+.navbar{
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+}
+.fa-code{
+    text-align: right;
+    color: var(--darkColor);
+    transform: color 1s ease-in-out;
+}
+.navbar-toggler{
+    background-color: white;
+}
+/* .fa-code:hover{
+    color: var(--secondColor);
+} */
+.navbar-toggler:focus{
+    outline-color: white;
+    background-color: white;
+}
+.navbar_card{
+    opacity: 0.5;
+    transition: opacity 1s ease-in-out;
+}
+.navbar_card:hover{
+    opacity: 1;
+}
+.outline_navbar_comingsoon{
+    outline-color: var(--contactformtextColor) !important;
+}
+.link_hover_navbar {
+    color: var(--darkColor);
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+    text-decoration: none;
+}
+.link_hover_navbar:hover {
+    color: var(--secondColor);
+    text-decoration: none;
+}
+
+/* jumbotron */
+.jumbotron{
+    background-color: var(--lightColor);
+}
+.spacer{
+    padding-top: 70px;
+    color: var(--contactformColor);
+}
+
+/* meet the crew */
+.card-img-top{
+    border-radius: 0%;
+    /* border-radius: 0%;
+    border: 2px solid var(--contactformtextColor); */
+
+    /* transition: border-color 0.5s ease-in-out; */
+}
+/* .card-img-top:hover{
+    border-color: var(--contactformColor);
+    
+} */
+.image{
+    position: relative;
+    overflow: hidden;
+    width: 288px;
+    height: 156px; 
+    /* background: url(../img/totoro029.jpg) center center no-repeat; */
+    /* border: 1px solid black; */
+}
+#slide_image{
+    position: absolute;
+    left: -288px;
+    width: 288px;
+    height: 156px;
+    /* border-color: yellowgreen; */
+    transition: 1s;
+}
+.image:hover #slide_image{
+    transition: 1s;
+    left: 0;
+}
+/* text */
+/* .card_text{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+}
+#slide_text{
+    position: absolute;
+    left: -300px;
+    width: 100%;
+    transition: 1s;
+    background-color: var(--contactformtextColor);
+    z-index: 1;
+}
+.card_text:hover #slide_image{
+    transition: 1s;
+    left: 0px;
+    z-index: 2;
+} */
+/*.crew_button{
+    position: relative;
+    overflow: hidden;
+    border: 2px solid hotpink;
+    width: 50%;
+    height: 40px;
+    z-index: 1;
+}*/
+/* #slide_button{
+    position: absolute;
+        left: -110px;
+    width: 50%;
+    height: 40px;
+    transition: 1s;
+        z-index: 1;
+} */
+/*.crew_button:hover #slide_button{
+    transition: 1s;
+    transform-origin: left;
+    border: 2px solid purple;
+    left: 0;
+    z-index: 2;
+}*/
+
+/* .card-img-top::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $secondaryColor;
+    transform: scaleX(0);
+    z-index: -1;
+    transform-origin: left;
+    transition: transform 400ms; 
+} */
+/* .card-img-top:hover::before{
+    transform-origin: right;
+    transform: scaleX(1);
+} */
+
+
+/* button transition example */
+
+
+/* marquee */
+.marquee_image{
+    height: 150px;
+}
+
+/* link hover */
+a {
+    color: var(--darkColor);
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondColor);
+    text-decoration: none;
+}
+
+/* footer */
+.border_top{
+    border-top: var(--lightColor);
+}
+
+/* .form_border{
+    border-bottom: var(--contactformColor);
+}
+.form_box_border{
+    border-top: var(--contactformColor);
+} */
+.footer_a{
+    color: var(--contactformtextColor);
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+    text-decoration: none;
+}
+.footer_a:hover{
+    color: var(--secondColor);
+    text-decoration: none;
+}
+.footer_b{
+    color: var(--contactformColor);
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+    text-decoration: none;
+}
+.text_right{
+    text-align: right;
+}
+.text_left{
+    text-align: left;
+}

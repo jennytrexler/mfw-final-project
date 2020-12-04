@@ -7,6 +7,9 @@
     --primaryFont: 'Roboto', sans-serif, bold;
     --secondaryFont: 'Roboto', sans-serif;
     --jumbotronBackground: url("../img/ponyo038.jpg") center center no-repeat;
+
+    --firstFadeColor: #16171C;
+    --secondFadeColor: #1A1E29;
 }
 
 #light_text_color{
@@ -39,6 +42,11 @@ nav{
 }
 .fa-code{
     text-align: right;
+    color: var(--lightColor);
+    transform: color 0.5s ease-in-out;
+}
+.fa-code:hover{
+    color: var(--secondColor);
 }
 .navbar-toggler:focus{
     outline-color: var(--aboveJumbotron);
@@ -49,6 +57,22 @@ nav{
 }
 .navbar_card:hover{
     opacity: 1;
+}
+.nav_focus:focus{
+    outline-color: var(--aboveJumbotron);
+}
+.no_outline_nav_dropdown{
+    outline: var(--aboveJumbotron) !important;
+}
+.navbar_text_opacity{
+    opacity: 1 !important;
+    transition: none;
+}
+.navbar_text_opacity:hover{
+    opacity: 1;
+}
+.text_above_jumbo{
+    color: var(--aboveJumbotron);
 }
 
 /* jumbotron */
